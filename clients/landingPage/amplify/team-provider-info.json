@@ -1,0 +1,25 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify9619e203167d4-staging-194709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::259164624689:role/amplify-amplify9619e203167d4-staging-194709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::259164624689:role/amplify-amplify9619e203167d4-staging-194709-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify9619e203167d4-staging-194709-deployment",
+      "UnauthRoleName": "amplify-amplify9619e203167d4-staging-194709-unauthRole",
+      "StackName": "amplify-amplify9619e203167d4-staging-194709",
+      "StackId": "arn:aws:cloudformation:us-east-1:259164624689:stack/amplify-amplify9619e203167d4-staging-194709/771b3eb0-dc63-11ec-a343-0e4d85c69abf",
+      "AmplifyAppId": "d3e1prjj0bhtgy"
+    },
+    "categories": {
+      "auth": {
+        "authenticartfrontend": {
+          "userPoolId": "us-east-1_NQZxVWV0K",
+          "userPoolName": "MunicipalitesUserPool-dev",
+          "webClientId": "6eace8rhlp55aov213fkkarpom",
+          "nativeClientId": "6eace8rhlp55aov213fkkarpom"
+        }
+      }
+    }
+  }
+}

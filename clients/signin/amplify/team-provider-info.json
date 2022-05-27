@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-munipalitepoc-dev-102433-authRole",
+      "UnauthRoleArn": "arn:aws:iam::259164624689:role/amplify-munipalitepoc-dev-102433-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::259164624689:role/amplify-munipalitepoc-dev-102433-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-munipalitepoc-dev-102433-deployment",
+      "UnauthRoleName": "amplify-munipalitepoc-dev-102433-unauthRole",
+      "StackName": "amplify-munipalitepoc-dev-102433",
+      "StackId": "arn:aws:cloudformation:us-east-1:259164624689:stack/amplify-munipalitepoc-dev-102433/3c235730-db6d-11ec-ad75-0eacdaf8ae7d",
+      "AmplifyAppId": "d18ktgh95dxlcg"
+    },
+    "categories": {
+      "auth": {
+        "MunicipalitePOC": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "AdminQueries370bcab4": {
+          "deploymentBucketName": "amplify-munipalitepoc-dev-102433-deployment",
+          "s3Key": "amplify-builds/AdminQueries370bcab4-6c325330535a72384c57-build.zip"
+        }
+      }
+    }
+  }
+}

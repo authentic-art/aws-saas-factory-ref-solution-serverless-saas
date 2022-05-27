@@ -1,0 +1,72 @@
+{
+  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"8.3.0\",\"stackType\":\"auth-Cognito-UserPool-Groups\",\"metadata\":{}}",
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {
+    "env": {
+      "Type": "String"
+    },
+    "AuthRoleArn": {
+      "Type": "String"
+    },
+    "UnauthRoleArn": {
+      "Type": "String"
+    },
+    "authMunicipalitePOCUserPoolId": {
+      "Type": "String",
+      "Default": "authMunicipalitePOCUserPoolId"
+    },
+    "authMunicipalitePOCAppClientID": {
+      "Type": "String",
+      "Default": "authMunicipalitePOCAppClientID"
+    },
+    "authMunicipalitePOCAppClientIDWeb": {
+      "Type": "String",
+      "Default": "authMunicipalitePOCAppClientIDWeb"
+    }
+  },
+  "Conditions": {
+    "ShouldNotCreateEnvResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "env"
+        },
+        "NONE"
+      ]
+    }
+  },
+  "Resources": {
+    "readersGroup": {
+      "Type": "AWS::Cognito::UserPoolGroup",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "authMunicipalitePOCUserPoolId"
+        },
+        "Description": "override success",
+        "GroupName": "readers",
+        "Precedence": 1
+      }
+    },
+    "contributorsGroup": {
+      "Type": "AWS::Cognito::UserPoolGroup",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "authMunicipalitePOCUserPoolId"
+        },
+        "Description": "override success",
+        "GroupName": "contributors",
+        "Precedence": 2
+      }
+    },
+    "editorsGroup": {
+      "Type": "AWS::Cognito::UserPoolGroup",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "authMunicipalitePOCUserPoolId"
+        },
+        "Description": "override success",
+        "GroupName": "editors",
+        "Precedence": 3
+      }
+    }
+  }
+}
