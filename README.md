@@ -1,3 +1,5 @@
+# This is not the repo use for Infractrusture as Code. The repo is hosted on CodeCommit AWS
+
 # Serverless SaaS - Reference Solution
 **[Feedback & Feature request](https://github.com/aws-samples/aws-saas-factory-ref-solution-serverless-saas/issues/new)** | **[Documentation](DOCUMENTATION.md)**
 
